@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    tools:background="@android:color/holo_orange_dark">
 
+    <include layout="@layout/activity_main_frame"/>
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/TextView1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello"-->
+    <!--        android:textSize="20sp"-->
+    <!--        tools:background="@android:color/holo_purple"/>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/TextView2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="World!"-->
+    <!--        android:textSize="20sp"-->
+    <!--        tools:background="@android:color/holo_purple"/>-->
 
 
 </FrameLayout>
