@@ -2,4 +2,5 @@
 <resources>
     <dimen name="number_text_size">30sp</dimen>
     <dimen name="button_margin">4dp</dimen>
+    <dimen name="button_width">100dp</dimen>
 </resources>
