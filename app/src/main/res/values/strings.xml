@@ -18,4 +18,6 @@
     <string name="multiply">*</string>
     <string name="divide">/</string>
     <string name="dropping">C</string>
+    <string name="counter_1">Counter1</string>
+    <string name="counter_2">Counter2</string>
 </resources>

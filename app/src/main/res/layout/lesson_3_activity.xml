@@ -6,7 +6,15 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/instanceState"
+        android:text="Life Cycle Activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="TextView" />
+
+    <Button
+        android:id="@+id/button"
+        android:text="push me"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </FrameLayout>
