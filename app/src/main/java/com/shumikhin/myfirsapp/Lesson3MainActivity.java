@@ -9,13 +9,16 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.Serializable;
 import java.util.Locale;
 
 public class Lesson3MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "Lesson3MainActivity";
-    private int counter1 = 0; // первый счетчик
+
+    Lesson3Counters counters;
+    //private int counter1 = 0; // первый счетчик
     private TextView textCounter1; // пользовательский элемент 1-го счетчика
-    private int counter2 = 0;
+    //private int counter2 = 0;
     private TextView textCounter2; // пользовательский элемент 2-го счетчика
 
     @Override
@@ -33,6 +36,8 @@ public class Lesson3MainActivity extends AppCompatActivity implements View.OnCli
 
         makeToast(instanceState + " - onCreate()");
 
+        counters = new Lesson3Counters();
+
         initView();
 
 //        findViewById(R.id.button).setOnClickListener(view -> {
@@ -49,8 +54,8 @@ public class Lesson3MainActivity extends AppCompatActivity implements View.OnCli
         textCounter2 = findViewById(R.id.textView2);
 
         findViewById(R.id.button2).setOnClickListener(view -> {
-            counter2++;
-            textCounter2.setText(String.format(Locale.getDefault(), "%d", counter2));
+            counters.incrementCounter2();
+            textCounter2.setText(String.format(Locale.getDefault(), "%d", counters.getCounter2()));
         });
 
 //        Button button1 = findViewById(R.id.button1);
@@ -73,6 +78,11 @@ public class Lesson3MainActivity extends AppCompatActivity implements View.OnCli
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         makeToast("onRestoreInstanceState()");
+        //counters = (Lesson3Counters) savedInstanceState.getSerializable("COUNTERS");
+        //используем методику с Parcelable
+        counters = savedInstanceState.getParcelable("COUNTERS");
+        textCounter1.setText(String.format(Locale.getDefault(), "%d", counters.getCounter1()));
+        textCounter2.setText(String.format(Locale.getDefault(), "%d", counters.getCounter2()));
     }
 
     @Override
@@ -89,8 +99,15 @@ public class Lesson3MainActivity extends AppCompatActivity implements View.OnCli
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        makeToast("onSaveInstanceState()");
+       super.onSaveInstanceState(outState);
+       makeToast("onSaveInstanceState()");
+       //Если нужно сохранить в BUNDLE класс объект класса то надо импелементировать в классе - implements Serializable
+       //И можно будет сохранять в бандл.
+       //outState.putSerializable("COUNTERS", counters);
+
+       //используем методику с Parcelable (типа она быстрее так как не сипользует сериализацию)
+       outState.putParcelable("COUNTERS", counters);
+
     }
 
     @Override
@@ -112,8 +129,8 @@ public class Lesson3MainActivity extends AppCompatActivity implements View.OnCli
     }
 
     public void button1_onClick(View view) {
-        counter1++;
-        textCounter1.setText(String.format(Locale.getDefault(), "%d", counter1));
+        counters.incrementCounter1();
+        textCounter1.setText(String.format(Locale.getDefault(), "%d", counters.getCounter1()));
     }
 
     @Override
