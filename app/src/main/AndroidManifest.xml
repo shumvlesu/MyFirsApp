@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirsApp">
+        <activity android:name=".Lesson4_MainActivity"></activity>
         <activity android:name=".Lesson3MainActivity2" />
-        <activity android:name=".Lesson3MainActivity"
+        <activity
+            android:name=".Lesson3MainActivity"
             android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
