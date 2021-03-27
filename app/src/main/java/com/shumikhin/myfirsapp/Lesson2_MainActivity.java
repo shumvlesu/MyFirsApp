@@ -1,16 +1,12 @@
 package com.shumikhin.myfirsapp;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import static java.lang.Integer.valueOf;
 
-public class MainActivity extends AppCompatActivity {
+public class Lesson2_MainActivity extends AppCompatActivity {
 
     private Integer arg1;
     private Integer arg2;
@@ -19,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
-        setContentView(R.layout.lesson_2_activity);
+        setContentView(R.layout.lesson2_activity);
         //TODO
         //FIXME
 

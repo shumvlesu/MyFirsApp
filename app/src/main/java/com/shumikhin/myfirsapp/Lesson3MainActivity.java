@@ -9,7 +9,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.Serializable;
 import java.util.Locale;
 
 public class Lesson3MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -24,7 +23,7 @@ public class Lesson3MainActivity extends AppCompatActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lesson_3_activity2);
+        setContentView(R.layout.lesson3_activity2);
 
         String instanceState;
 

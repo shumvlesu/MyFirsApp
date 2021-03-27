@@ -13,7 +13,7 @@ public class Lesson3MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lesson_3_activity);
+        setContentView(R.layout.lesson3_activity);
 
         String instanceState;
 
