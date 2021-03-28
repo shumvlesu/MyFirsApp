@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <include layout="@layout/activity_calculator"/>
+    <include layout="@layout/lesson1_activity_main_scroll"/>
 
 
     <!--    <TextView-->

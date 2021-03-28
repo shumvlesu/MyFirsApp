@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import static java.lang.Integer.valueOf;
 
-public class Lesson2_MainActivity extends AppCompatActivity {
+public class Lesson2MainActivity extends AppCompatActivity {
 
     private Integer arg1;
     private Integer arg2;

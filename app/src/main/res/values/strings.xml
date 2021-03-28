@@ -1,23 +1,36 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Debug</string>
     <string name="is_equal">Равно?</string>
-    <string name="_1">1</string>
-    <string name="_2">2</string>
-    <string name="_3">3</string>
-    <string name="_4">4</string>
-    <string name="_5">5</string>
-    <string name="_6">6</string>
-    <string name="_7">7</string>
-    <string name="_8">8</string>
-    <string name="_9">9</string>
-    <string name="_0">0</string>
-    <string name="dot">.</string>
-    <string name="equally">=</string>
-    <string name="plus">+</string>
-    <string name="minus">-</string>
-    <string name="multiply">*</string>
-    <string name="divide">/</string>
-    <string name="dropping">C</string>
-    <string name="counter_1">Counter1</string>
-    <string name="counter_2">Counter2</string>
+    <string name="_1" translatable="false">1</string>
+    <string name="_2" translatable="false">2</string>
+    <string name="_3" translatable="false">3</string>
+    <string name="_4" translatable="false">4</string>
+    <string name="_5" translatable="false">5</string>
+    <string name="_6" translatable="false">6</string>
+    <string name="_7" translatable="false">7</string>
+    <string name="_8" translatable="false">8</string>
+    <string name="_9" translatable="false">9</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="dot" translatable="false">.</string>
+    <string name="equally" translatable="false">=</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="minus" translatable="false">-</string>
+    <string name="multiply" translatable="false">*</string>
+    <string name="divide" translatable="false">/</string>
+    <string name="dropping" translatable="false">C</string>
+    <string name="counter_1" translatable="false">Counter1</string>
+    <string name="counter_2" translatable="false">Counter2</string>
+    <string name="language_english" translatable="false">Language - English</string>
+    <string name="language">English</string>
+    <string name="density" tools:ignore="MissingTranslation">DPI</string>
+    <string name="orientation">Portland</string>
+    <string name="night_mode">Not night</string>
+    <string name="screen_format">Not long</string>
+    <string name="version" tools:ignore="MissingTranslation">Any</string>
+    <string name="descriptionLanguage">Language</string>
+    <string name="descriptionDensity">Density</string>
+    <string name="descriptionOrientation">Orientation</string>
+    <string name="descriptionNight_mode">Night mode</string>
+    <string name="descriptionScreen_format">Screen format</string>
+    <string name="descriptionVersion">Version</string>
 </resources>
