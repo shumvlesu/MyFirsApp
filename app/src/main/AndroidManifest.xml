@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirsApp">
         <activity
-            android:name=".Lesson4MainActivity">
+            android:name=".Lesson4MainActivity2">
 <!--            android:configChanges="orientation|screenSize"-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
