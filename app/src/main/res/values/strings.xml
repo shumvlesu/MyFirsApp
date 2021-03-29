@@ -35,4 +35,9 @@
     <string name="descriptionVersion">Version</string>
     <string name="loginName" translatable="false">login</string>
     <string name="password" translatable="false">password</string>
+    <string name="my_cool_style">My cool style</string>
+    <string name="material_light">Material light</string>
+    <string name="material_light_action_bar_dark">Material light action bar dark</string>
+    <string name="material_dark">Material dark</string>
+
 </resources>

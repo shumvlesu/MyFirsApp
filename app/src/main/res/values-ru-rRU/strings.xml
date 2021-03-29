@@ -12,4 +12,9 @@
     <string name="descriptionNight_mode">Ночной режим</string>
     <string name="descriptionScreen_format">Формат экрана</string>
     <string name="descriptionVersion">Версия</string>
+    <string name="my_cool_style">Мой классный стиль</string>
+    <string name="material_light">Матириал светлая</string>
+    <string name="material_light_action_bar_dark">Панель действий с темной подсветкой материала</string>
+    <string name="material_dark">Матириал темная</string>
+
 </resources>

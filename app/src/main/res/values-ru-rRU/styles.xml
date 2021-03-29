@@ -7,9 +7,8 @@
         <item name="android:layout_marginStart">@dimen/margin</item>
         <item name="android:layout_marginEnd">@dimen/margin</item>
         <item name="android:layout_marginTop">@dimen/margin</item>
-        <item name="android:fontFamily">cursive</item>
-        <item name="android:textStyle">italic</item>
-        <item name="android:backgroundTint" tools:targetApi="lollipop">@android:color/transparent</item>
-    </style>
+        <item name="android:textStyle">bold</item>
 
+    </style>
+<!--<item name="android:backgroundTint" tools:targetApi="lollipop">@android:color/transparent</item>-->
 </resources>
