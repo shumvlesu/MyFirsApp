@@ -30,8 +30,19 @@ public class Lesson4MainActivity2 extends AppCompatActivity {
         initThemeChooser();
     }
 
-    private int getAppTheme(int codeStyle) {
-        return codeStyleToStyleId(getCodeStyle(codeStyle));
+
+    // Инициализация радиокнопок
+    private void initThemeChooser() {
+        initRadioButton(findViewById(R.id.radioButtonMyCoolStyle),
+                MyCoolCodeStyle);
+        initRadioButton(findViewById(R.id.radioButtonMaterialDark),
+                AppThemeDarkCodeStyle);
+        initRadioButton(findViewById(R.id.radioButtonMaterialLight),
+                AppThemeLightCodeStyle);
+        initRadioButton(findViewById(R.id.radioButtonMaterialLightDarkAction),
+                AppThemeCodeStyle);
+        RadioGroup rg = findViewById(R.id.radioButtons);
+        ((MaterialRadioButton) rg.getChildAt(getCodeStyle(MyCoolCodeStyle))).setChecked(true);
     }
 
     // Все инициализации кнопок очень похожи, поэтому создадим метод для переиспользования
@@ -56,18 +67,8 @@ public class Lesson4MainActivity2 extends AppCompatActivity {
         editor.apply();
     }
 
-    // Инициализация радиокнопок
-    private void initThemeChooser() {
-        initRadioButton(findViewById(R.id.radioButtonMyCoolStyle),
-                MyCoolCodeStyle);
-        initRadioButton(findViewById(R.id.radioButtonMaterialDark),
-                AppThemeDarkCodeStyle);
-        initRadioButton(findViewById(R.id.radioButtonMaterialLight),
-                AppThemeLightCodeStyle);
-        initRadioButton(findViewById(R.id.radioButtonMaterialLightDarkAction),
-                AppThemeCodeStyle);
-        RadioGroup rg = findViewById(R.id.radioButtons);
-        ((MaterialRadioButton) rg.getChildAt(getCodeStyle(MyCoolCodeStyle))).setChecked(true);
+    private int getAppTheme(int codeStyle) {
+        return codeStyleToStyleId(getCodeStyle(codeStyle));
     }
 
     private int getCodeStyle(int codeStyle) {
